@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Satta King Fast for live updates on satta king results. Get real-time results and more.">
+    <meta name="keywords" content="Satta King, live updates, satta result, gaming, betting">
+    <meta name="author" content="Satta King Fast">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Satta King Fast - Live Updates">
+    <meta property="og:description" content="Get real-time results and more from Satta King Fast.">
+    <meta property="og:image" content="https://source.unsplash.com/1600x900/?casino,game">
+    <meta property="og:url" content="https://www.sattakingfast.com/">
+    <link rel="canonical" href="https://www.sattakingfast.com/">
+    <title>Satta King Fast - Live Updates</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensures full height of screen */
+            background: url('https://source.unsplash.com/1600x900/?casino,game') no-repeat center center/cover;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        /* Dark Overlay for Better Readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 15px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff0000; /* Red color */
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Notice Section Styling */
+        .notice {
+            text-align: center;
+            color: #ff5722;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .contact a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .contact img {
+            width: 30px;
+            margin-left: 10px;
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+        }
+
+        .contact img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Update Info */
+        .update-info {
+            text-align: center;
+            color: #e0e0e0;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Table Styling */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            border-bottom: 1px solid #444;
+        }
+
+        td.yellow {
+            background-color: #ffeb3b;
+            color: #000;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Refresh Button */
+        .refresh {
+            display: inline-block;
+            background-color: #ff9800;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .refresh:hover {
+            background-color: #e65100;
+        }
+
+        /* Dark Mode Toggle Button */
+        #dark-mode-toggle {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #121212;
+            border: none;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+
+        #dark-mode-toggle:hover {
+            background-color: #e65100;
+        }
+
+        /* New Styling for Time under Game Name */
+        .game-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .game-time {
+            font-size: 14px;
+            color: #ffeb3b;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="https://www.pic.surf/cgi" alt="Satta King Fast Logo">
+        <h1>SATTA-KING-LITE.com</h1>
+    </header>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+
+    <!-- Notice Section -->
+    <div class="notice">
+        कृपया ध्यान दें, लीक गेम के नाम पर किसी को कोई पैसा न दें, ना पहले ना बाद में - धन्यवाद
+    </div>
+
+    <!-- Contact Section (WhatsApp Icon with Text) -->
+    <div class="contact">
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" aria-label="Contact us on WhatsApp">
+            हमसे संपर्क करने के लिए <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <!-- Live Time Update -->
+    <p class="update-info">Updated Time: <span id="live-time"></span></p>
+
+    <!-- Table Section -->
+    <table>
+        <thead>
+            <tr>
+                <th>Games List</th>
+                <th id="date-friday"></th>
+                <th id="date-saturday"></th>
+            </tr>
+        </thead>
+        <tbody id="game-results">
+            <!-- Static Game Data (Monday & Sunday Results) -->
+            <tr>
+                <td class="game-name">
+                    FARIDABAD DIN LITE 
+                    <div class="game-time">Opening Time: 10:00 AM</div>
+                </td>
+                <td>XX</td>
+                <td>XX</td>
+            </tr>
+            <tr>
+                <td class="game-name">
+                    GHAZIABAD DIN LITE 
+                    <div class="game-time">Opening Time: 12:00 PM</div>
+                </td>
+                <td>XX</td>
+                <td>XX</td>
+            </tr>
+            <tr>
+                <td class="game-name">
+                    FARIDABAD LITE
+                    <div class="game-time">Opening Time: 2:00 PM</div>
+                </td>
+                <td>XX</td>
+                <td>XX</td>
+            </tr>
+            <tr>
+                <td class="game-name">
+                    GHAZIABAD LITE 
+                    <div class="game-time">Opening Time: 4:00 PM</div>
+                </td>
+                <td>XX</td>
+                <td>XX</td>
+            </tr>
+            <tr>
+                <td class="game-name">
+                    GALI LITE
+                    <div class="game-time">Opening Time: 6:00 PM</div>
+                </td>
+                <td>XX</td>
+                <td>XX</td>
+            </tr>
+            <tr>
+                <td class="game-name">
+                    DESAWAR LITE
+                    <div class="game-time">Opening Time: 8:00 PM</div>
+                </td>
+                <td>XX</td>
+                <td>XX</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Refresh Button -->
+    <div class="contact">
+        <a class="refresh" href="#" aria-label="Refresh the page" onclick="window.location.reload(); return false;">Refresh</a>
+    </div>
+
+    <script>
+        // Update Time
+        function updateTime() {
+            let now = new Date();
+            let options = { 
+                timeZone: 'Asia/Kolkata', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit' 
+            };
+            let timeString = now.toLocaleString('en-IN', options);
+            document.getElementById('live-time').innerText = timeString;
+        }
+
+     // Update Days (Today, Tomorrow)
+function updateDays() {
+    let now = new Date();
+    let tomorrow = new Date();
+    tomorrow.setDate(now.getDate() + 1); // Kal ki tareekh
+
+    document.getElementById('date-friday').innerText = `Today (${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()})`;
+    document.getElementById('date-saturday').innerText = `Tomorrow (${tomorrow.getDate()}-${tomorrow.getMonth() + 1}-${tomorrow.getFullYear()})`;
+}
+
+        // Dark Mode Toggle
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Initial Calls
+        setInterval(updateTime, 1000); // Update time every second
+        updateTime(); // Display initial time on page load
+        updateDays(); // Display initial days (Friday and Saturday)
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monthly Satta King Result Chart">
+    <meta name="keywords" content="Satta King, Monthly Chart, Result Table">
+    <meta name="author" content="Satta King Fast">
+    <title>Monthly Satta King Result Chart - January 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            background: #ffcc00;
+            color: #121212;
+            padding: 15px;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+        }
+
+        .day {
+            font-weight: bold;
+            background: #ff9800;
+            color: #000;
+        }
+
+        .number {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Monthly Satta King Result Chart - FEBRUARY 2025</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>DSWR</th>
+                <th>FRBD</th>
+                <th>GZBD</th>
+                <th>GALI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day">01</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">02</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">03</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">04</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">05</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">06</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">07</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">08</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">09</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+                <td class="day">10</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+             </tr>
+                <tr>
+                <td class="day">11</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">12</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">13</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">14</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">15</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">16</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">17</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">18</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">19</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">20</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">21</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">22</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">23</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">24</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">25</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">26</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">27</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            	   <tr>
+                <td class="day">28</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+                <td class="number">XX</td>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+
+</body><!-- Notice Board Section (हमेशा नीचे Fixed रहेगा) -->
+<div class="notice-board">
+    <h2>🔔 महत्वपूर्ण सूचना 🔔</h2>
+    <p>
+        कृपया ध्यान दें! यह एक महत्वपूर्ण सूचना है। यहां आप अपने यूजर्स के लिए जरूरी अपडेट्स और गाइडलाइन्स डाल सकते हैं। 
+        यह नोटिस हर समय स्क्रीन के सबसे नीचे रहेगा और विजिटर्स को महत्वपूर्ण जानकारी देगा।
+    </p>
+</div>
+</body>
+</html>
