@@ -145,6 +145,32 @@
             color: white;
             font-weight: bold;
         }
+    
+td.big-number {
+    font-size: 22px; /* नंबर बड़ा किया */
+    font-weight: bold; /* मोटा किया */
+    color: #008000; /*  हरा रंग (एटीट्यूड कलर) */
+    background: #222; /* डार्क बैकग्राउंड */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }  /* पूरा दिखे */
+    50% { opacity: 0; } /* गायब हो जाए */
+    100% { opacity: 1; } /* फिर से दिखे */
+}
+
+td.big-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #008000;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    animation: blink 1s infinite; /* हर 1 सेकंड में रिपीट होगा */
+}
+}
 
         td {
             border-bottom: 1px solid #444;
