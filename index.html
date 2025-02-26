@@ -394,6 +394,17 @@ function updateDays() {
             margin: 0;
             font-size: 24px;
         }
+            /* हल्का-फुल्का झिलमिलाहट (ब्लिंक इफ़ेक्ट) */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+      .number {
+    color: red;
+    animation: blink 1.5s infinite;
+}
+
 
         table {
             width: 90%;
