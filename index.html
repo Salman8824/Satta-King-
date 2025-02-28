@@ -333,10 +333,10 @@ td.big-number {
 function updateDays() {
     let now = new Date();
     let tomorrow = new Date();
-    tomorrow.setDate(now.getDate() + 1); // Kal ki tareekh
+    tomorrow.setDate(now.getDate() -  1); // Kal ki tareekh
 
-    document.getElementById('date-friday').innerText = `Today (${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()})`;
-    document.getElementById('date-saturday').innerText = `Tomorrow (${tomorrow.getDate()}-${tomorrow.getMonth() + 1}-${tomorrow.getFullYear()})`;
+    document.getElementById('date-friday').innerText = `आज खुलने वाले गेम  (${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()})`;
+    document.getElementById('date-saturday').innerText =  `कल खोले गए गेम (${tomorrow.getDate()}-${tomorrow.getMonth() + 1}-${tomorrow.getFullYear()})`;
 }
 
         // Dark Mode Toggle
