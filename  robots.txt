@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.sattakinglite.co4.in/sitemap.xml
