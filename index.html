@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Team Help</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #121212, #2c3e50);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 0, 0, 0.9);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 600;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .menu-toggle {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 5px 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            background: rgba(0, 0, 0, 0.9);
+            width: 160px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            display: none;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        .dropdown a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 14px;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.3s;
+            text-align: center;
+        }
+
+        .dropdown a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .dropdown a:last-child {
+            border-bottom: none;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            font-size: 14px;
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .breadcrumb a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumb span {
+            color: white;
+            font-weight: 400;
+        }
+
+        /* Main Content */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 22px;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 16px;
+            color: #f1f1f1;
+        }
+
+        /* Rank Booking Box */
+        .rank-booking {
+            margin-top: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #ff8c00, #ff2d55);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.4);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0px 0px 10px rgba(255, 140, 0, 0.7);
+            }
+            to {
+                box-shadow: 0px 0px 20px rgba(255, 45, 85, 0.9);
+            }
+        }
+        
+        .whatsapp-contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .whatsapp-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #25D366;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            width: fit-content;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 255, 100, 0.5);
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 255, 100, 0.7);
+        }
+
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .whatsapp-number {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">DREAM 11 OFFICIAL BOOKING TEAMS</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ MENU</div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown" id="dropdownMenu">
+            <a href="https://wa.me/919876543210?text=Hello!%20I%20need%20help">💬 Help</a>
+            <a href="https://wa.me/919876543210?text=Hello!%20This%20is%20my%20query.">📞 WhatsApp</a>
+            <a href="#" id="timeOption">⏳ Time: --:--</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="#">🏠 Home</a> &gt; 
+        <a href="#">Dream11</a> &gt; 
+        <span>Dream 11 में 1st Rank बुक करें</span>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Dream 11 में 1st Rank बुक करें</h1>
+        <p>हम Dream11 में 1st Rank बुक करने की सुविधा प्रदान करते हैं। अधिक जानकारी के लिए संपर्क करें।</p>
+        
+        <!-- Rank Booking Box -->
+        <div class="rank-booking">
+            🚀 DREAM 11 1-10 RANK BOOKING START! 🎉
+        </div>
+    </div>
+
+    <!-- WhatsApp Contact -->
+    <div class="whatsapp-contact">
+        <a href="https://wa.me/919876543210?text=Hello!%20I%20need%20help" class="whatsapp-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+            <span class="whatsapp-number">+91 98765 43210</span>
+        </a>
+    </div>
+<!-- TODAY MATCH BOOKING TIME CLOSE -->
+<div class="match-time">
+    <marquee behavior="scroll" direction="left" scrollamount="3">
+        🔥 TODAY MATCH BOOKING TIME CLOSE 🔥
+    </marquee>
+    <div id="countdown"></div>
+</div>
+<!-- Match Image -->
+<div class="match-image">
+    <img src="https://www.pic.surf/ct3" alt="Match Info">
+</div>
+
+<style>
+    .match-time {
+        margin-top: 25px; /* 1 इंच गैप */
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffcc00;
+        text-align: center;
+        background: rgba(255, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+        position: relative;
+    }
+
+    #countdown {
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+        margin-top: 10px;
+    }
+  .match-image {
+    margin-top: 25px; /* टाइमर के नीचे 1 इंच का गैप */
+    text-align: center; /* इमेज को सेंटर में लाने के लिए */
+}
+
+.match-image img {
+    width: 320px; /* इमेज का साइज़ */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    display: block; /* ब्लॉक एलिमेंट बनाकर सेंटर में लाना */
+    margin: auto; /* ऑटो मार्जिन से सेंटर */
+}
+
+.match-image img:hover {
+    transform: scale(1.05);
+}
+</style>
+
+<script>
+    function startCountdown(hours, minutes, seconds) {
+        let endTime = new Date();
+        endTime.setHours(hours, minutes, seconds);
+
+        function updateCountdown() {
+            let now = new Date();
+            let timeDiff = endTime - now;
+
+            if (timeDiff <= 0) {
+                document.getElementById("countdown").innerHTML = "🚨 BOOKING CLOSED 🚨";
+                return;
+            }
+
+            let hrs = Math.floor(timeDiff / (1000 * 60 * 60));
+            let mins = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            let secs = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `⏳ ${hrs}h : ${mins}m : ${secs}s`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    }
+
+    // यहाँ बुकिंग बंद होने का समय (घंटा, मिनट, सेकंड) सेट करें
+    startCountdown(18, 45, 59); // रात 06:45:59 बजे बंद होगी
+</script>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        }
+    </script>
+
+</body>
+</html>
